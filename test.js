@@ -8,6 +8,14 @@ app.get('/', (req, res) => {
     res.send('Hello Virtual Machine!')
 })
 
+app.get('/servicea', (req, res) => {
+    res.send('Service A')
+})
+
+app.get('/serviceb', (req, res) => {
+    res.send('Service B')
+})
+
 app.listen(port, ()=> {
     console.log('Express Application listening at port 3000')
 })
